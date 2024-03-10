@@ -1,0 +1,44 @@
+{
+  "name": "wechat-emotion-parser",
+  "version": "1.0.0",
+  "description": "QQ, WeChat Emoji Parsing: String to Image URLs",
+  "main": "./src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-merge": "^0.1.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-wrap": "^0.11.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "dist": "gulp dist",
+    "preversion": "npm test",
+    "version": "npm run dist && git add dist",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/degencoco/wechat-emotion-parser.git"
+  },
+  "keywords": [
+    "QQ",
+    "Wechat"
+  ],
+  "author": "buddys, harttle, Meriky",
+  "license": "GPL-3.0"
+}
